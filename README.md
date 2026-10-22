@@ -1,150 +1,32 @@
-# SAS Visual Analytics: Product Analysis Dashboard
+# Sports Product Assortment Dashboard
 
-**Tools:** SAS Visual Analytics · SAS Studio · Business Intelligence · Dashboard Reporting · Data Visualization
+**Author:** Cameron Batts
 
----
+## Problem
+Show how reported product counts are distributed across categories and product lines.
 
-# Business Problem
+## Dashboard design and review
+Review the product-line donut chart, category ranking and product-group treemap, preserving the meaning of the displayed Number of Products measure.
 
-Organizations managing large product portfolios require centralized reporting to better understand inventory composition, product category concentration, and product distribution across business lines.
+## Findings
+The dashboard displays a rounded 3.2K product total. Clothes is the largest displayed category with 884 products, followed by Assorted Sports Articles with 465, Children Sports with 413 and Shoes with 330. The twelve displayed category counts sum to 3,151, consistent with the rounded headline. These figures describe the exported product-count view.
 
-This project uses SAS Visual Analytics to build an interactive product analysis dashboard focused on product mix reporting, category distribution, and inventory visualization.
+## Limitations
+Product counts are not units sold, revenue, available stock or inventory turnover. The source table and native SAS report definition are absent, so distinct-count logic, filters and aggregation rules cannot be verified. A static export does not demonstrate a live drill-through or pop-up interaction. No operational outcome or improved inventory allocation was measured. Dataset provenance is not recorded in the supplied export; previous claims of real operational data were unsupported.
 
-The objective was to improve visibility into product concentration and support business intelligence reporting through interactive dashboard analytics.
+## Data and provenance
+The repository contains a dashboard image and PDF, with no raw product table. The exported product-line labels are Children, Clothes & Shoes, Outdoors and Sports. The analysis retains factual category and product labels.
 
----
+## Verification
+Displayed category counts and the rounded KPI were checked against the PDF and a rendered page. The twelve visible category values were summed independently. No underlying SAS dataset was recomputed.
 
-# Project Overview
+## Reading the dashboard
+The donut chart summarizes four product lines, the ranked bars compare twelve categories, and the treemap shows finer product-group composition. The report is a static portfolio case study of that design.
 
-The dashboard provides:
-- product category distribution analysis
-- product line segmentation
-- inventory composition visualization
-- product concentration reporting
-- KPI-based dashboard monitoring
+## View the project
+- [Analysis report](Reports/sas_sports_product.html)
+- [Portfolio analysis](https://cameron-batts.github.io/sas_sports_product.html)
+- [Original export: Product_Analysis_on_Apr_25__2026.pdf](Reports/Product_Analysis_on_Apr_25__2026.pdf)
 
-The dashboard was designed to help identify:
-- dominant product categories
-- high-volume product groups
-- inventory concentration patterns
-- product mix distribution across business lines
-
----
-
-# Tools & Technologies
-
-- SAS Visual Analytics
-- SAS Studio
-- SAS Reporting
-- Business Intelligence Dashboards
-- Interactive Visualization
-- Data Visualization
-
----
-
-# Analytical Focus Areas
-
-- Product analytics
-- Inventory reporting
-- Product mix analysis
-- Category concentration analysis
-- Dashboard visualization
-- Business intelligence reporting
-- Product portfolio analysis
-
----
-
-# Dashboard Components
-
-## Product Category Distribution
-
-The dashboard analyzes inventory concentration across multiple product categories, including:
-- Clothes
-- Assorted Sports Articles
-- Children Sports
-- Shoes
-- Outdoors
-- Golf
-- Indoor Sports
-- Running & Jogging
-- Swim Sports
-- Winter Sports
-
-The category ranking visualization highlights dominant product segments based on product volume.
-
----
-
-# Product Line Composition
-
-The dashboard includes a donut chart summarizing product distribution across major product lines:
-- Children
-- Clothes & Shoes
-- Outdoors
-- Sports
-
-Key KPI highlighted:
-- Total Products: **3.2K**
-
----
-
-# Treemap Visualization
-
-The treemap visualization provides detailed visibility into individual product groups and inventory composition.
-
-Examples include:
-- Eclipse Clothing
-- Tracker Clothes
-- Eclipse Shoes
-- Golf
-- Bathing Suits
-- Running Clothes
-- Winter Sports
-
-The treemap helps identify product concentration and portfolio distribution patterns.
-
----
-
-# Dashboard Visualization
-
-![Product Analysis Dashboard](./Images/Product-Analysis.png)
-
----
-
-# Key Insights
-
-- Clothing and sports-related categories represent a significant portion of total inventory volume.
-- Product concentration is distributed across a relatively small number of dominant categories.
-- Treemap visualization improves visibility into inventory composition and product portfolio structure.
-- Interactive dashboards improve accessibility and business reporting efficiency.
-
----
-
-# Repository Structure
-
-```text
-data/        -> project data information
-Images/      -> dashboard screenshots and visual outputs
-reports/     -> exported PDF dashboard reports
-README.md    -> project overview and documentation
-```
-
----
-
-# Files
-
-| File | Description |
-|------|-------------|
-| `reports/Product_Analysis_on_Apr_25__2026.pdf` | Exported SAS Visual Analytics product analysis dashboard |
-| `Images/Product-Analysis.png` | Dashboard visualization screenshot |
-| `data/README.md` | Information regarding project data source and usage |
-
----
-
-# Author
-
-Cameron Batts
-
-GitHub: https://github.com/Cameron-Batts
-
-Portfolio: https://cameron-batts.github.io
-
+## Dashboard previews
+![Product Analysis](Images/Product%20Analysis.png)
